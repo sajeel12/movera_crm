@@ -52,10 +52,10 @@ export const login_user = (details) => async (dispatch) => {
 
 export const secretkey = (key) => async (dispatch) => {
 
-  try {
+  try {http://crmsmtransports.site/
     console.log(key)
 
-    const secret_key_response = await axios.post("http://localhost:5000/api/auth/secretadminkey", { key })
+    const secret_key_response = await axios.post("http://crmsmtransports.site:5000/api/auth/secretadminkey", { key })
     const results = secret_key_response;
     console.log(results.status);
     if (results.status==200) {
